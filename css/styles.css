@@ -1,23 +1,105 @@
-.play-bold {
-  font-family: 'Play', sans-serif;
-  font-weight: 700;
-  font-style: normal;
+/* Common */
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --second-family: 'Play', sans-serif;
 }
-.roboto-regular {
+
+body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  color: #011c44;
+  background-color: #ffffff;
   font-style: normal;
 }
+ul {
+  list-style: none;
+}
+a,
+link {
+  text-decoration: none;
+}
+/* Header */
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 0.95455;
+  text-transform: capitalize;
+  color: #2b7fff;
+  font-family: 'Play', sans-serif;
+}
+.header-list-item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.header-list-item:hover {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2b7fff;
+}
+/* Hero */
+.clinic {
+  font-size: 18px;
+}
+.hero-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.81429;
+  text-transform: capitalize;
+  color: #2b7fff;
+}
+.button {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  background: #2b7fff;
+}
+.consultation {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+/* Change section */
+.change-title {
+  font-weight: 700;
+  font-size: 64px;
+  font-family: 'Play', sans-serif;
+}
+.change-title-span {
+  text-transform: capitalize;
+  color: #2b7fff;
+}
+.change-text {
+  font-size: 22px;
+  line-height: 1.72727;
+}
+.change-span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Why us */
+
+/* Procedures section */
+
+/* Find section */
+
+/* Footer */
 .frame {
   border: 2px solid #ccc; /* Сіра рамка */
-  border-radius: 8px; /* Закруглені кути рамки */
+  border-radius: 32px; /* Закруглені кути рамки */
   padding: 16px; /* Внутрішні відступи */
   display: flex; /* Гнучке вирівнювання для картинки і тексту */
   align-items: center; /* Вирівнювання по центру */
   gap: 12px; /* Відстань між елементами */
-  max-width: 400px; /* Обмеження ширини рамки */
-  background-color: #f9f9f9; /* Світлий фон */
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Тінь для об'єму */
+  max-width: 316px; /* Обмеження ширини рамки */
+  height: 181px;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+  background: #fff;
+  text-decoration: none;
 }
 
 .frame-image {
@@ -25,10 +107,11 @@
   height: 80px; /* Фіксована висота картинки */
   object-fit: cover; /* Обрізання зображення під розмір */
   border-radius: 50%; /* Кругла картинка */
+  fill: #2b7fff;
 }
 
 .frame-text {
   margin: 0; /* Забираємо зовнішні відступи у тексту */
-  font-size: 16px;
-  color: #333; /* Темно-сірий колір тексту */
+  font-size: 18px;
+  color: #000; /* Темно-сірий колір тексту */
 }
