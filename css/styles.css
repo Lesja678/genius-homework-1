@@ -82,36 +82,102 @@ link {
 }
 
 /* Why us */
-
-/* Procedures section */
-
-/* Find section */
-
-/* Footer */
+.why-us-title {
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  font-family: 'Play', sans-serif;
+}
+.why-us-title-span {
+  color: #2b7fff;
+}
+.why-us-item {
+  line-height: 1.33;
+  text-align: center;
+  color: #000;
+}
 .frame {
-  border: 2px solid #ccc; /* Сіра рамка */
-  border-radius: 32px; /* Закруглені кути рамки */
-  padding: 16px; /* Внутрішні відступи */
-  display: flex; /* Гнучке вирівнювання для картинки і тексту */
-  align-items: center; /* Вирівнювання по центру */
-  gap: 12px; /* Відстань між елементами */
-  max-width: 316px; /* Обмеження ширини рамки */
+  border-radius: 32px;
+  width: 316px;
   height: 181px;
   box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
   background: #fff;
-  text-decoration: none;
 }
-
-.frame-image {
-  width: 80px; /* Фіксована ширина картинки */
-  height: 80px; /* Фіксована висота картинки */
-  object-fit: cover; /* Обрізання зображення під розмір */
-  border-radius: 50%; /* Кругла картинка */
-  fill: #2b7fff;
+/* Procedures section */
+.procedures-title {
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: #011c44;
+  font-family: 'Play', sans-serif;
 }
-
-.frame-text {
-  margin: 0; /* Забираємо зовнішні відступи у тексту */
+.procedures-title-span {
+  color: #2b7fff;
+}
+/* Find section */
+.find-title {
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: #011c44;
+  font-family: 'Play', sans-serif;
+}
+.find-title-span {
+  color: #2b7fff;
+}
+.find-user-box {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+}
+.find-user-box-span {
+  color: #2b7fff;
+}
+.user-box-item {
+  font-size: 13px;
+  color: #fff;
+}
+.user-button {
+  font-weight: 600;
   font-size: 18px;
-  color: #000; /* Темно-сірий колір тексту */
+  color: #fff;
+  background: #2b7fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+}
+.user-agree {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #747272;
+}
+.user-agree-span {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+/* Footer */
+.footer {
+}
+.footer-logo {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 0.875;
+  text-transform: capitalize;
+  color: #2b7fff;
+}
+.footer-nav-item {
+  font-size: 16px;
+  color: #fff;
+}
+.footer {
+  background-color: #011c44;
+  background-image: url('../images/ftrbackground.jpg'); /* Шлях до вашого фото */
+  background-size: contain; /* Зробити фото таким, щоб покрило весь елемент */
+  background-position: cover; /* Розташування зображення по центру */
+  background-repeat: no-repeat; /* Запобігти повторенню зображення */
 }
