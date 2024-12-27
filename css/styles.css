@@ -59,11 +59,14 @@ address {
   text-transform: capitalize;
   color: #2b7fff;
 }
-/* Header */
+
 .header-container {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-bottom: 19px;
+  justify-content: center;
+  padding: 32px;
 }
 .header-nav {
   flex-grow: 1;
@@ -86,9 +89,25 @@ address {
 }
 
 /* Hero */
+.hero-section {
+  display: flex;
+}
+.hero-container container {
+  justify-content: left;
+  padding: 10px, 97px;
+  margin-bottom: 195px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 214px;
+  max-width: 529px;
+  height: 408px;
+  align-items: start;
+}
 
 .clinic {
   font-size: 18px;
+  margin-bottom: 16px;
+  margin-left: 214px;
 }
 .hero-title {
   font-family: 'Play', sans-serif;
@@ -97,6 +116,9 @@ address {
   line-height: 0.81429;
   text-transform: capitalize;
   color: #2b7fff;
+  margin-bottom: 40px;
+  max-width: 529px;
+  margin-left: 214px;
 }
 .button {
   font-weight: 600;
@@ -104,9 +126,11 @@ address {
   background-color: #2b7fff;
   padding: 16px 32px;
   border-radius: 32px;
-  width: 219px;
-  height: 53px;
+  width: 238px;
+  margin-bottom: 14px;
   cursor: pointer;
+  margin-left: 214px;
+  border-style: none;
 }
 button:hover {
   color: #2b7fff;
@@ -115,15 +139,45 @@ button:hover {
 .consultation {
   font-size: 12px;
   line-height: 1.5;
-  text-align: center;
+  width: 238px;
   color: #4a4a4a;
+  text-align: center;
+  margin-left: 214px;
 }
 
 /* Change section */
+.change-container.container {
+  display: flex;
+  gap: 32px;
+  padding: 50px 0;
+  align-items: flex-start;
+}
+.change-content {
+  flex: 1;
+  max-width: 50%;
+}
+.change-imgs {
+  flex: 1;
+  max-width: 499px;
+}
+.change-imgs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 176px;
+}
+.change-imgs-item {
+  width: 100%;
+  display: block;
+}
+
 .change-title {
   font-weight: 700;
   font-size: 64px;
   font-family: 'Play', sans-serif;
+  margin-bottom: 20px;
 }
 .change-title-span {
   text-transform: capitalize;
@@ -136,14 +190,32 @@ button:hover {
 .change-span {
   font-weight: 600;
   text-transform: capitalize;
+  margin-bottom: 15px;
+  line-height: 1.5;
 }
 
 /* Why us */
+
+.why-us-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1060px;
+  align-items: center;
+  margin-bottom: 96px;
+}
+.procedures-list {
+  display: flex;
+  flex-direction: row;
+}
 .why-us-title {
   font-weight: 700;
   font-size: 64px;
   text-align: center;
   font-family: 'Play', sans-serif;
+  margin-left: 314px;
+  align-items: center;
+  max-width: 432px;
+  margin-bottom: 48px;
 }
 .why-us-title-span {
   color: #2b7fff;
@@ -152,6 +224,7 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 56px;
+  margin-left: 300px;
 }
 .why-us-item {
   border: 2px solid #ccc;
@@ -176,18 +249,62 @@ button:hover {
 .procedures-title-span {
   color: #2b7fff;
 }
+.procedures-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-left: 150px;
+  margin-bottom: 139px;
+}
 /* Find section */
+.find-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1059px;
+  height: 602px;
+  margin-bottom: 96px;
+}
+.find-nav {
+  display: flex;
+  gap: 32px;
+}
 .find-title {
   font-weight: 700;
   font-size: 64px;
   text-align: center;
   color: #011c44;
   font-family: 'Play', sans-serif;
+  margin-bottom: 48px;
 }
 .find-title-span {
   color: #2b7fff;
 }
 .find-user-box {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+  background-color: #011c44;
+  border-radius: 32px;
+  width: 423px;
+  height: 481px;
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.find-user-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  align-items: center;
+}
+.find-user-title {
+  max-width: 274px;
+  height: 52px;
+  margin-bottom: 32px;
   font-weight: 600;
   font-size: 22px;
   text-align: center;
@@ -199,17 +316,31 @@ button:hover {
 .user-box-item {
   font-size: 13px;
   color: #fff;
+  margin-bottom: 16px;
+  max-width: 310px;
+  height: 52px;
+  border-radius: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+  padding: 18px 33px;
 }
 .user-button {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
   background: #2b7fff;
+  padding: 10px 20px;
+  border-radius: 32px;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
-  gap: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  max-width: 281px;
+  height: 53px;
 }
 .user-agree {
   font-size: 12px;
@@ -225,6 +356,24 @@ button:hover {
 .footer {
   background-color: #011c44;
   display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  height: 278px;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  justify-items: flex-start;
+}
+.footer-conteiner {
+  display: flex;
+  flex-direction: row;
+  max-width: 1239px;
+  height: 166px;
+  gap: 186px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 56px 100px;
+  width: 100%;
 }
 .footer-logo {
   font-family: 'Play', sans-serif;
@@ -233,20 +382,56 @@ button:hover {
   line-height: 0.875;
   text-transform: capitalize;
   color: #2b7fff;
+  gap: 186px;
+  white-space: normal;
+  overflow: visible;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+  text-align: left;
+}
+.footer-nav {
+  display: flex;
+  gap: 186px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  max-width: auto;
+  height: auto;
 }
 .footer-nav-item {
   font-size: 16px;
   color: #fff;
 }
-
-.footer-logo {
-  font-family: 'Play', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 0.875;
-  text-transform: capitalize;
-  color: #2b7fff;
+.footer-link {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-bottom: 16px;
 }
-.header-list-item {
-  font-family: 'Roboto', sans-serif;
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-item {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  padding-bottom: 16px;
+  display: flex;
+}
+.footer-social {
+  display: flex;
+  padding-top: 16px;
+}
+.footer-nav-item,
+.policy {
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
 }
